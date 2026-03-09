@@ -1,0 +1,27 @@
+Table users {
+    id int [pk, increment]
+    name text 
+    email text
+    password text
+    created_at datetime
+}
+
+Table contents {
+    id int [pk, increment]
+    author_id int [ref: > users.id]
+    title text
+    description text
+    body text
+    tags text[]
+    created_at datetime
+    updated_at datetime
+}
+
+Table collections {
+    id int [pk, increment]
+    owner_id int [ref: > users.id]
+    title text
+    description text
+    tags text []
+}
+ 

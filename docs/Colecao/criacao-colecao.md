@@ -44,5 +44,5 @@ Permitir que usuários autenticados criem coleções de conteúdos no sistema.
 
 * **Frontend:** Formulário de criação de coleção, seleção de conteúdos existentes, campos de título, descrição e tags.
 * **Backend:** API para criar coleções, associar conteúdos e retornar coleções criadas.
-* **Banco de Dados:** Tabela `collections` com campos: `id`, `user_id`, `title`, `description`, `tags`, `created_at`, `updated_at`; relação com tabela `contents`.
+* **Banco de Dados:** Tabela `collections` com campos: `id`, `ower_id`, `title`, `description`, `tags`, `created_at`, `updated_at`; relação com tabela `contents`.
 * **Segurança:** Verificação de autenticação antes da criação.

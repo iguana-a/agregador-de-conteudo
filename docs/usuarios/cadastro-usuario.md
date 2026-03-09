@@ -66,5 +66,5 @@ O objetivo do módulo de cadastro é permitir que novos usuários criem uma cont
 
 * **Frontend:** Formulário de cadastro com validação em tempo real.
 * **Backend:** API para criar usuário, validação de dados, hashing de senha.
-* **Banco de Dados:** Tabela `users` com campos: `id`, `nome`, `email`, `senha_hash`, `foto_perfil`, `biografia`, `data_criacao`.
+* **Banco de Dados:** Tabela `users` com campos: `id`, `nome`, `email`, `senha_hash`, `data_criacao`.
 * **Segurança:** Proteção contra ataques de força bruta e injeção de SQL.
