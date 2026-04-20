@@ -18,14 +18,16 @@ Definir as tecnologias, ferramentas e padrões necessários para implementação
 
 ### 2.2 Backend
 
-* API RESTful para gestão de conteúdos, coleções e usuários
+* API RESTful para gestão de conteúdos, coleções e usuários (Festify, Kysely)
 * Autenticação via JWT ou sistema baseado em sessão
 * Validação de autenticação e propriedade em todas as rotas de escrita
 * Registro de logs de ações e erros
 
+
 ### 2.3 Banco de Dados
 
-* Tabelas principais: `users`, `contents`, `collections`, `content_suggestions`
+* PostgreSQL
+* Tabelas principais: `users`, `contents`, `collections`
 * Relacionamentos entre conteúdos e coleções
 * Índices em campos de busca (título, descrição, tags)
 * Backups periódicos e procedimentos de restauração
