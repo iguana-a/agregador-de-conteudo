@@ -5,11 +5,11 @@ import {defineConfig} from 'kysely-ctl'
 export default defineConfig({
     dialect: new PostgresDialect({
         pool: new Pool({
-            database: 'content_aggregator',
-            host: 'postgres',
-            user: 'postgres',
-            password: 'postgres',
-            port: 5432
+            database: process.env.DATABASE,
+            host: process.env.DATABASE_HOST,
+            user: process.env.DATABASE_USER,
+            password: process.env.DATABASE_PASSWORD,
+            port: Number(process.env.DATABASE_PORT)
         })
     })
 })
