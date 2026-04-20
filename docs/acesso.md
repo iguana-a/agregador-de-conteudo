@@ -51,5 +51,5 @@ Definir os níveis de acesso para usuários autenticados e não autenticados no 
 
 * **Frontend:** Verificação de autenticação antes de permitir ações de criação, edição ou sugestão
 * **Backend:** Validação de propriedade e autenticação em todas as rotas de escrita
-* **Banco de Dados:** Controle de propriedade em tabelas `users`, `contents`, `collections` e `content_suggestions`
+* **Banco de Dados:** Controle de propriedade em tabelas `users`, `contents` e `collections`.
 * **Segurança:** Proteção contra acesso não autorizado e alterações indevidas

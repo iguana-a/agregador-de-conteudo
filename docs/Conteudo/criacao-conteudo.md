@@ -48,6 +48,6 @@ Permitir que usuários autenticados criem conteúdos em markdown para o sistema.
 
 * **Frontend:** Editor de markdown, formulário de criação e edição.
 * **Backend:** API para criação, edição, exclusão e listagem de conteúdos.
-* **Banco de Dados:** Tabela `contents` com campos: `id`, `user_id`, `title`, `description`, `body`, `tags`, `created_at`, `updated_at`.
+* **Banco de Dados:** Tabela `contents` com campos: `id`,`author_id`, `title`, `description`, `body`, `created_at`, `updated_at`.
 * **Segurança:** Validação de propriedade antes de edição ou exclusão.
 * **Renderização:** Markdown convertido para HTML no frontend.

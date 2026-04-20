@@ -38,6 +38,6 @@ Permitir que usuários autenticados acessem o sistema para criar, editar e geren
 
 * **Frontend:** Formulário de login com validação em tempo real.
 * **Backend:** API para autenticação, geração de token ou sessão.
-* **Banco de Dados:** Verificação de email e senha_hash na tabela `users`.
+* **Banco de Dados:** Verificação de email e password na tabela `users`.
 * **Segurança:** Proteção contra ataques de força bruta e injeção de SQL.
 * **Autorização:** Tokens ou sessões utilizados para acesso a recursos restritos.

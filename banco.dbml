@@ -3,7 +3,7 @@ Table users {
     name text 
     email text
     password text
-    created_at datetime
+    created_at timestamp
 }
 
 Table contents {
@@ -12,9 +12,8 @@ Table contents {
     title text
     description text
     body text
-    tags text[]
-    created_at datetime
-    updated_at datetime
+    created_at timestamp
+    updated_at timestamp
 }
 
 Table collections {
@@ -22,8 +21,28 @@ Table collections {
     owner_id int [ref: > users.id]
     title text
     description text
-    tags text []
 }
 
+Table tags {
+    id int [pk, increment]
+    name text [unique]
+}
 
- 
+Table content_tags {
+    content_id int [ref: > contents.id]
+    tag_id int [ref: > tags.id]
+    indexes { (content_id, tag_id)[pk]}
+}
+
+Table collection_tags {
+    collection_id int [ref: > collections.id]
+    tag_id int [ref: > tags.id]
+    indexes { (collection_id, tag_id)[pk]}
+}
+
+Table collection_items{
+    collection_id int [ref: > collections.id]
+    content_id int [ref: > contents.id]
+    added_et timestamp
+    indexes { (collection_id,content_id)[pk]}
+}
